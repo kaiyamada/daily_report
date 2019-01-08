@@ -36,13 +36,14 @@ public class Employee {
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(name = "code",nullable = false,unique = true)
+
+    @Column(name = "code", nullable = false, unique = true)
     private String code;
 
-    @Column(name = "name",nullable = false)
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "password",length = 64,nullable = false)
+    @Column(name = "password", length = 64, nullable = false)
     private String password;
 
     @Column(name = "admin_flag", nullable = false)
@@ -57,7 +58,6 @@ public class Employee {
     @Column(name = "delete_flag", nullable = false)
     private Integer delete_flag;
 
-
     public Integer getId() {
         return id;
     }
@@ -66,10 +66,11 @@ public class Employee {
         this.id = id;
     }
 
-    public String getCode(){
+    public String getCode() {
         return code;
     }
-    public void setCode(String code){
+
+    public void setCode(String code) {
         this.code = code;
     }
 
@@ -121,6 +122,3 @@ public class Employee {
         this.delete_flag = delete_flag;
     }
 }
-
-
-
