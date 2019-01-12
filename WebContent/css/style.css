@@ -113,3 +113,7 @@ select {
 h1 a {
     color: #eeeeee;
 }
+
+h3 {
+    font-size: larger;
+}
